@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+main {
+  border: 0.2rem solid darkred;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  /* background-color:#FFC7EA; */
+  /* #CAEDFF */
+  background: linear-gradient(180deg, #ffc7ea, #d8b4f8);
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 30px;
+  height: 40%;
+  font-family: "Courgette", cursive;
+  color: #000036;
+}
+.my-projects {
+  border: 0.3rem solid greenyellow;
+  position: relative;
+  height: 60%;
+}
+.my-projects-inner {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  padding: 1.5rem;
+
+}
+
+.my-projects button {
+  border: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  width: calc(75px + 2vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.my-projects button.hidden{
+  display: none;
+}
+
+.my-projects button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.my-projects button:hover::after {
+  opacity: 0.5;
+}
+.my-projects button:active::after {
+  opacity: 1;
+}
+.my-projects .before {
+  left: 0;
+  background: linear-gradient(to right, #000b, #0000);
+}
+.my-projects .before::after {
+  background: linear-gradient(to right, #0008, #0000);
+}
+
+.my-projects .after {
+  right: 0;
+  background: linear-gradient(to left, #000b, #0000);
+}
+.my-projects .after::after {
+  background: linear-gradient(to left, #0008, #0000);
+}
+.project-tile {
+  /* border: 0.3rem solid red; */
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: stretch;
+  /* width: calc(50%-0.75rem); */
+  text-decoration: none;
+  background-color: #fbf0b2;
+  transition: filter 0.25s;
+  height: 100%;
+  width: 300px;
+}
+.project-tile:hover {
+  filter: brightness(2.5);
+}
+.a {
+  text-decoration: none;
+}

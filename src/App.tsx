@@ -17,6 +17,21 @@ function App() {
     )
   }
 
+  const leftArrowClickHandle = () => {
+    const newValue = (myProjectsInner.current?.scrollLeft ?? 0) - 300
+    const lowerBound = 0
+    setMyProjectsInnerScrollLeft(Math.max(newValue, lowerBound))
+    myProjectsInner.current?.scrollTo(newValue, 0)
+  }
+
+  const rightArrowClickHandle = () => {
+    const newValue = (myProjectsInner.current?.scrollLeft ?? 0) + 300
+    const upperBound = getUpperBound()
+    setMyProjectsInnerScrollLeft(Math.min(newValue, upperBound))
+    myProjectsInner.current?.scrollTo(newValue, 0)
+    console.log(myProjectsInner.current?.scrollLeft)
+  }
+
   window.addEventListener("resize", () => {
     const lowerBound = 0
     const upperBound = getUpperBound()
@@ -34,12 +49,7 @@ function App() {
       <div className="my-projects">
         <button
           className={`before ${myProjectsInnerScrollLeft < 1 ? "hidden" : ""}`}
-          onClick={() => {
-            const newValue = (myProjectsInner.current?.scrollLeft ?? 0) - 300
-            const lowerBound = 0
-            setMyProjectsInnerScrollLeft(Math.max(newValue, lowerBound))
-            myProjectsInner.current?.scrollTo(newValue, 0)
-          }}
+          onClick={leftArrowClickHandle}
         >
           &lt;
         </button>
@@ -55,13 +65,7 @@ function App() {
               ? "hidden"
               : ""
           }`}
-          onClick={() => {
-            const newValue = (myProjectsInner.current?.scrollLeft ?? 0) + 300
-            const upperBound = getUpperBound()
-            setMyProjectsInnerScrollLeft(Math.min(newValue, upperBound))
-            myProjectsInner.current?.scrollTo(newValue, 0)
-            console.log(myProjectsInner.current?.scrollLeft)
-          }}
+          onClick={rightArrowClickHandle}
         >
           &gt;
         </button>

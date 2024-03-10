@@ -9,7 +9,9 @@ main {
   height: 100%;
   /* background-color:#FFC7EA; */
   /* #CAEDFF */
-  background: linear-gradient(180deg, #ffc7ea, #d8b4f8);
+  /* background: linear-gradient(180deg, #ffc7ea, #d8b4f8); */
+  background-image: url("./Backgrounds/Background-2.jfif");
+  background-size: cover;
 }
 .about-me {
   display: flex;

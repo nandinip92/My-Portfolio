@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: "Photo Viewer",
     description: "A simple React photo application",
-    image: "../assets/photo-viewer.PNG",
+    image: "/PhotoViewer/photo-viewer.png",
     link: "https://nandinip92.github.io/photo-viewer-react-app/",
   },
   {

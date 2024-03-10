@@ -48,7 +48,7 @@ function App() {
       <AboutMeSection />
       <div className="my-projects">
         <button
-          className={`before ${myProjectsInnerScrollLeft < 1 ? "hidden" : ""}`}
+          className={`left-arrow ${myProjectsInnerScrollLeft < 1 ? "hidden" : ""}`}
           onClick={leftArrowClickHandle}
         >
           &lt;
@@ -59,7 +59,7 @@ function App() {
           ))}
         </div>
         <button
-          className={`after  ${
+          className={`right-arrow  ${
             myProjectsInner.current &&
             myProjectsInnerScrollLeft > getUpperBound() - 1
               ? "hidden"

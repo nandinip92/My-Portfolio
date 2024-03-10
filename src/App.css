@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
 main {
   border: 0.2rem solid darkred;
   display: flex;
@@ -30,7 +32,6 @@ main {
   gap: 1.5rem;
   scroll-behavior: smooth;
   padding: 1.5rem;
-
 }
 
 .my-projects button {
@@ -47,7 +48,7 @@ main {
   cursor: pointer;
 }
 
-.my-projects button.hidden{
+.my-projects button.hidden {
   display: none;
 }
 
@@ -68,19 +69,19 @@ main {
 .my-projects button:active::after {
   opacity: 1;
 }
-.my-projects .before {
+.my-projects .left-arrow {
   left: 0;
   background: linear-gradient(to right, #000b, #0000);
 }
-.my-projects .before::after {
+.my-projects .left-arrow::after {
   background: linear-gradient(to right, #0008, #0000);
 }
 
-.my-projects .after {
+.my-projects .right-arrow {
   right: 0;
   background: linear-gradient(to left, #000b, #0000);
 }
-.my-projects .after::after {
+.my-projects .right-arrow::after {
   background: linear-gradient(to left, #0008, #0000);
 }
 .project-tile {
@@ -97,9 +98,21 @@ main {
   height: 100%;
   width: 300px;
 }
-.project-tile:hover {
-  filter: brightness(2.5);
+.project-tile img {
+  max-width: 100%;
+  height: auto;
 }
-.a {
+.project-tile:hover {
+  filter: brightness(2);
+}
+a {
   text-decoration: none;
+  color: #000036;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.project-details {
+  padding: 15px;
 }

@@ -46,7 +46,7 @@ export const Protfolio: React.FC = () => {
   return (
     <main>
       <AboutMeSection />
-      <div className="my-projects">
+      <div className="my-projects-container">
         <button
           className={`left-arrow ${
             myProjectsInnerScrollLeft < 1 ? "hidden" : ""
@@ -55,7 +55,7 @@ export const Protfolio: React.FC = () => {
         >
           &lt;
         </button>
-        <div className="my-projects-inner" ref={myProjectsInner}>
+        <div className="my-projects" ref={myProjectsInner}>
           {projects.map((project) => (
             <ProjectTile project={project} />
           ))}

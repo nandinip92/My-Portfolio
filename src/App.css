@@ -14,13 +14,27 @@ main {
   background-size: cover;
 }
 .about-me {
+  border: 0.2em solid red;
   display: flex;
-  flex-direction: column;
   padding: 0 0 0 30px;
   height: 40%;
   font-family: "Courgette", cursive;
   color: #000036;
 }
+
+.name-section {
+  flex-direction: column;
+}
+.picture-section {
+  border: 0.2rem solid green;
+  justify-content: center;
+}
+.picture-section img {
+  border-radius: 50%;
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
 .my-projects-container {
   /* border: 0.3rem solid greenyellow; */
   position: relative;

@@ -12,7 +12,7 @@ export const ProjectTile: React.FC<ProjectTileProps> = ({ project }) => {
     <a href={link}>
       <div className="project-tile">
         <div className="project-image">
-          <img src={imageUrl} />
+          <img src={imageUrl} alt={project.name}/>
         </div>
         <div className="project-details">
           <h1>{name}</h1>

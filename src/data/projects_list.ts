@@ -38,6 +38,6 @@ export const projects: Project[] = [
     description:
       "A site to encourage young people to find out more about space",
     image: "./src/assets/MarsMission/mars-mission.png",
-    link: "#",
+    link: "https://github.com/nandinip92/mars-mission.git",
   },
 ]

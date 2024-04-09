@@ -1,4 +1,5 @@
 import { Project } from "../models/Project"
+//image: "./src/assets/PhotoViewer/photo-viewer-app-sceenshot.png",
 export const projects: Project[] = [
   {
     name: "Photo Viewer",
@@ -28,7 +29,7 @@ export const projects: Project[] = [
   {
     name: "MyFace",
     description: "A social media platform",
-    image: "",
+    image: "./src/assets/MyFace/my-face.png",
     link: "https://github.com/nandinip92/myface-api-typescript/tree/main/frontend",
   },
 
@@ -36,7 +37,7 @@ export const projects: Project[] = [
     name: "Mars Mission",
     description:
       "A site to encourage young people to find out more about space",
-    image: "",
+    image: "./src/assets/MarsMission/mars-mission.png",
     link: "#",
   },
 ]

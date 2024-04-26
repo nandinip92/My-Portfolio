@@ -9,30 +9,86 @@ main {
   flex-direction: column;
   align-items: stretch;
   height: 100%;
-  /* background: linear-gradient(180deg, #ffc7ea, #d8b4f8); */
-  background-image: url("./assets/Backgrounds/Background-4.jpg");
+  background: linear-gradient(-45deg, #e2998c, #f7b99e, #e2998c);
+  /* background-image: url("./assets/Backgrounds/Background-4.jpg"); */
   background-size: cover;
 }
 .about-me {
-  border: 0.2em solid red;
+  /* border: 0.2em solid red; */
   display: flex;
-  padding: 0 0 0 30px;
   height: 40%;
-  font-family: "Courgette", cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #000036;
+  color: white;
+  justify-content: space-evenly;
+  filter: drop-shadow(0 0 3px #ad4e3e);
 }
 
 .name-section {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  width: 75rem;
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.picture-section h1 {
+  font-family: "Courgette", cursive;
+  font-size: 2.45rem;
+  margin-bottom: 0.5rem;
+}
+.picture-section h2 {
+  margin-top: 0;
+  font-size: 2rem;
 }
 .picture-section {
-  border: 0.2rem solid green;
-  justify-content: center;
+  /* border: 0.2rem solid green; */
+  padding: 1.5rem;
+  flex-shrink: 0;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 .picture-section img {
   border-radius: 50%;
-  /* max-width: 100%;
-  max-height: 100%; */
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.statement-section {
+  /* font-size:1.75rem; */
+  margin-top: 0;
+}
+.statement-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.statement-section:nth-of-type(2n) {
+  text-align: right;
+  border-right: 2px solid #ad4e3e;
+  padding: 0 1rem 0 2rem;
+}
+
+.statement-section:nth-of-type(2n + 1) {
+  text-align: left;
+  border-left: 2px solid #ad4e3e;
+  padding: 0 2rem 0 1rem;
+}
+
+@media (max-width: 1080px) {
+  .about-me {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    /* font-size: 1rem; */
+  }
 }
 
 .my-projects-container {
@@ -51,8 +107,7 @@ main {
 }
 
 .project-image {
-  height: 50%;
-  /* border: 0.2rem solid; */
+  height: 75%;
 }
 img {
   width: 100%;
@@ -115,13 +170,13 @@ img {
   justify-content: space-between;
   align-items: stretch;
   padding: 1rem;
-  /* width: calc(50%-0.75rem); */
   text-decoration: none;
   background-image: url("./assets/Backgrounds/card-background.jpg");
   background-size: cover;
   transition: filter 0.25s;
   height: 100%;
-  width: 300px;
+  width: 30rem;
+  max-width: 90vw;
 }
 .project-tile img {
   max-width: 100%;

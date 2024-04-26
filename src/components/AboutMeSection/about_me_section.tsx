@@ -4,7 +4,7 @@ export const AboutMeSection: React.FC = () => {
   return (
     <div className="about-me">
       <div className="picture-section">
-        <img src="./src/assets/NandiniPolavarapu.jpeg" alt="profile-pic" />
+        <img src="./assets/NandiniPolavarapu.jpeg" alt="profile-pic" />
         <h1>Nandini Polavarapu</h1>
         <h2> Software Developer</h2>
       </div>

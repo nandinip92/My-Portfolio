@@ -195,7 +195,7 @@ img {
   align-items: stretch;
   padding: 1rem;
   text-decoration: none;
-  background-image: url(./assets/Backgrounds/card-background.jpg);
+  background-image: url(../assets/Backgrounds/card-background.jpg);
   background-size: cover;
   transition: filter 0.25s;
   height: 100%;

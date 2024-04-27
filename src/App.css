@@ -10,9 +10,11 @@ main {
   align-items: stretch;
   height: 100%;
   /* background: linear-gradient(-45deg, #e2998c, #f7b99e, #e2998c); */
-  background-image: url(assets/Backgrounds/Background-4.jpg);
-  background-size: cover;
-  background-repeat: repeat;
+  /*background-color:#F9CDC4; LIGHT PEACH RED */
+  /*background-color: #f0d1c8; Chick peach */
+  /* background-image: url(assets/Backgrounds/Background.jpg); */
+  /* background-size: cover;
+  background-repeat: repeat; */
 }
 
 .about-me {

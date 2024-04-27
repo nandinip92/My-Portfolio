@@ -124,7 +124,12 @@ main {
   display: flex;
   gap: 1rem;
   scroll-behavior: smooth;
+  overflow: auto;
   padding: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .project-image {
@@ -228,8 +233,17 @@ a {
   height: 100%;
 }
 
-@media (max-width: 1080px) {
+@media (max-device-width: 1080px) {
   .project-tile {
     width: 50vw;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .my-projects-container .right-arrow {
+    display: none;
+  }
+  .my-projects-container .left-arrow {
+    display: none;
   }
 }

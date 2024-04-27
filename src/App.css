@@ -192,7 +192,7 @@ img {
 
 .project-tile {
   /* border: 0.3rem solid red; */
-  background-image: url("../assets/Backgrounds/card-background.jpg");
+  background-image: url("../public/assets/Backgrounds/card-background.jpg");
   background-size: cover;
   border-radius: 2%;
   display: flex;

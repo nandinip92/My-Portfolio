@@ -246,4 +246,9 @@ a {
   .my-projects-container .left-arrow {
     display: none;
   }
+
+  .project-details h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
 }

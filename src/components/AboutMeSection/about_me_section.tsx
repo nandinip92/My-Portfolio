@@ -1,4 +1,6 @@
 import React from "react"
+import { FaLinkedin } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa6"
 
 export const AboutMeSection: React.FC = () => {
   return (
@@ -7,6 +9,20 @@ export const AboutMeSection: React.FC = () => {
         <img src="./assets/NandiniPolavarapu.jpeg" alt="profile-pic" />
         <h1>Nandini Polavarapu</h1>
         <h2> Software Developer</h2>
+        <div className="contact-me">
+          <FaLinkedin
+            className="social-icon"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/nandini-polavarapu-a1470662/"
+              )
+            }
+          />
+          <FaGithub
+            className="social-icon"
+            onClick={() => window.open("https://github.com/nandinip92")}
+          />
+        </div>
       </div>
       <div className="name-section">
         <p className="statement-section">

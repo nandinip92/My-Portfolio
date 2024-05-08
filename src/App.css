@@ -67,6 +67,15 @@ main {
   object-position: top;
 }
 
+.contact-me {
+  /* border: 0.2rem solid green; */
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon:hover {
+  filter: drop-shadow(0 0 10px #ad4e3e);
+}
 .statement-section {
   /* border: 0.2rem solid green;- */
   font-size: 1.5rem;

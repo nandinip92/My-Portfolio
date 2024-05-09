@@ -3,8 +3,7 @@ import { Project } from "../models/Project"
 export const projects: Project[] = [
   {
     name: "Zoo Management",
-    description:
-      "A site to encourage young people to find out more about space",
+    description: "Backend API with multiple endpoints for a new Zoo",
     image: "./assets/ZooManagemet/ZooAnimals.png",
     link: "https://github.com/nandinip92/ZooManagement.git",
   },
@@ -18,7 +17,8 @@ export const projects: Project[] = [
   },
   {
     name: "MyFace",
-    description: "A social media platform with user profiles, posts with likes and dislikes",
+    description:
+      "A social media platform with user profiles, posts with likes and dislikes",
     image: "./assets/MyFace/my-face.png",
     link: "https://github.com/nandinip92/myface-api-typescript/tree/main/frontend",
   },
@@ -32,9 +32,9 @@ export const projects: Project[] = [
   {
     name: "FakeLandia",
     description:
-      "A site to encourage young people to find out more about space",
+      "Fakelandia is a happy place, so a website to keep abreast of the latest justice developments",
     image: "./assets/Fakelandia/FakeLandia.PNG",
-    link: "https://nandinip92.github.io/lm-code-intro-react-router-fakelandia/",
+    link: "https://github.com/nandinip92/lm-code-intro-react-router-fakelandia.git",
   },
   {
     name: "Photo Viewer",

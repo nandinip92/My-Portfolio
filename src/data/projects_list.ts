@@ -5,7 +5,7 @@ export const projects: Project[] = [
     name: "Zoo Management",
     description: "Backend API with multiple endpoints for a new Zoo",
     image: "./assets/ZooManagemet/ZooAnimals.png",
-    link: "https://github.com/nandinip92/ZooManagement.git",
+    link: "https://mysterious-zoo-backend.azurewebsites.net/",
   },
 
   {
